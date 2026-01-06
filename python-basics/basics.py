@@ -1,1 +1,2 @@
 print("Let's start our jurny")
+print("---------------------")
