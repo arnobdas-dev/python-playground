@@ -27,7 +27,6 @@ i=0
 # print(dir(x))
 # help(str)
 # print(len(x))
-
 # print(id(x))
 # print(id(y))
 # help(object)
@@ -40,7 +39,6 @@ i=0
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
-
 # p = Person("Alice", 25)
 # print(vars(p))
 # def test():
@@ -51,12 +49,10 @@ i=0
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
-
 # p = Person("Alice", 25)
 # print(vars(p))
 # test()
 # print(globals())
-
 # print(a)
 
 
@@ -82,3 +78,40 @@ Operators
 # for n in nums:
 #     unique ^= n
 # print(unique)
+
+"""
+String methods
+--------------
+"""
+# a = input("Input your idea: ")
+# print(a.upper())
+# print(a.lower())
+# print(a.title())
+# print(a.capitalize())
+# print(a.strip())
+# print(a.lstrip())
+# print(a.rstrip())
+# print(a.split())
+# print("Python".isalpha())
+# text = "hello world"
+# print(text.startswith("hello"))
+# name = input("Enter your name: ")
+# print(text.find("a")) 
+# c = "xyxPythonxy"
+# print(c.strip("xy")) 
+# num = "42"
+# print(num.zfill(5))
+# filename = "report.pdf"
+# if filename.startswith("report"):
+# print("This is a report file")
+# text = "hello-world-python"
+# result = text.partition("-")
+# print(result)
+# print(text.ljust(10, "-"))
+
+
+"""
+control flow
+"""
+
+
