@@ -112,6 +112,77 @@ String methods
 
 """
 control flow
+------------
 """
 
+# if(x>10):
+#     print(f"{x} is the learger")
+# elif(x<=4):
+#     print(f"{x} is smaller")
 
+# for i in range(5):
+#     print(i)
+# else:
+#     print("this is the end")
+# for i in z:
+#     if i==3:
+#         print("found")
+#         break
+# else:
+#     print("not found")
+# while x == 4:
+#     for i in range (10):
+#         print(i)
+#     x+=1
+# try:
+#     x = int(input("Enter a positive number: "))
+#     if x < 0:
+#         raise ValueError("x cannot be negative")
+#     print(10 / x)
+# except ValueError as ve:
+#     print("Value Error:", ve)
+# except ZeroDivisionError:
+#     print("Cannot divide by zero!")
+# finally:
+#     print("Execution finished")
+
+"""
+Functions
+---------
+"""
+# def greet(name):
+#     print(f"{name} Hello")
+# greet("Arnobdas_dev")
+# def add(a,b):
+#     x = a+b
+#     return x
+# print(add(1,2))
+# sqr = lambda x: x**2
+# print(sqr(5))
+# def add(*args):
+#     return sum(args)
+# print(add(1, 2, 3, 4))
+# def person_info( **kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+# person_info(name="arnob", age=25)
+# def change_global():
+#     global x
+#     x += 5
+# change_global()
+# print(x)
+def count_up_to(n):
+    for i in range(1, n+1):
+        x=+ i  # pause here and give i
+
+for num in count_up_to(5):
+    print(num)
+class Person:
+    name = "Alice"
+p = Person()
+print(getattr(p, "name"))     
+print(getattr(p, "age", 25))
+setattr(p, "age", 30)
+print(p.age)
+print(hasattr(p, "name"))   # True
+print(hasattr(p, "gender")) 
