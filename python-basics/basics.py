@@ -171,18 +171,20 @@ Functions
 #     x += 5
 # change_global()
 # print(x)
-def count_up_to(n):
-    for i in range(1, n+1):
-        x=+ i  # pause here and give i
+# def count_up_to(n):
+#     for i in range(1, n+1):
+#         x=+ i  # pause here and give i
 
-for num in count_up_to(5):
-    print(num)
-class Person:
-    name = "Alice"
-p = Person()
-print(getattr(p, "name"))     
-print(getattr(p, "age", 25))
-setattr(p, "age", 30)
-print(p.age)
-print(hasattr(p, "name"))   # True
-print(hasattr(p, "gender")) 
+# for num in count_up_to(5):
+#     print(num)
+# class Person:
+#     name = "Alice"
+# p = Person()
+# print(getattr(p, "name"))     
+# print(getattr(p, "age", 25))
+# setattr(p, "age", 30)
+# print(p.age)
+# print(hasattr(p, "name"))   
+# print(hasattr(p, "gender")) 
+# delattr(p, "age")
+# print(hasattr(p, "age"))
