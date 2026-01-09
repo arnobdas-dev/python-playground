@@ -201,3 +201,82 @@ Functions
 #     if value == "admin":
 #         print(key)
 
+"""
+List methods
+------------
+"""
+# list = ["apple", "mango", "orange"]
+# number = [ 1,2,3,3,1,2,5,3,4,9]
+# list.append("litchi")
+# list.extend(["banana","litchi"])
+# list.insert(1,"tomato")
+# list.remove("apple")
+# list.pop(1)
+# list.index("litchi")
+
+# number = number + [2,3,4,4,4,4]
+# print(number.count(3))
+# print(list)
+# number.sort()
+# number.reverse()
+# # b =number.copy()
+# b = [x for x in number if number.count(x)==1]
+# print(b)
+
+"""
+Tuple methods
+-------------
+"""
+# tuple = ("mango","tometo")
+# a,b = tuple
+# # print(a)
+# # print(b)
+
+# print(tuple.count("mango"))
+# print(tuple.index("mango"))
+
+"""
+Set methods
+-----------
+"""
+# fruits = { "mango", "lemon"}
+# num = {1,2,3,4}
+# fruits.add("orange")
+# fruits.update({"litchi"},["goava"])
+# fruits.remove("mango")
+# fruits.discard("tomato")
+# fruit = fruits.pop()
+# print(fruits)
+# print(fruit)
+# print(fruits.union(num))
+# print(fruits.intersection(num))
+# print(fruits.difference(num))
+# print(fruits.symmetric_difference(num))
+# print(fruits.isdisjoint(num))
+# print(fruits.issubset(num))
+# print(fruits.issuperset(num))
+# fruits.clear()
+
+
+"""
+Dictionary methods
+-----------
+"""
+my_dic ={
+    "name": "Arnob",
+    "age": 25
+
+}
+new_dic = my_dic.copy()
+print(new_dic)
+print(my_dic.get("name"))
+print(my_dic.items())
+print(my_dic.keys())
+print(my_dic.values())
+name = my_dic.pop("name")
+age = my_dic.popitem()
+my_dic.setdefault("age", 30)
+print(name)
+print(age)
+my_dic.update([("age",25),("age",2444)])
+print(my_dic)
