@@ -173,8 +173,7 @@ Functions
 # print(x)
 # def count_up_to(n):
 #     for i in range(1, n+1):
-#         x=+ i  # pause here and give i
-
+#         x=+ i 
 # for num in count_up_to(5):
 #     print(num)
 # class Person:
@@ -188,3 +187,17 @@ Functions
 # print(hasattr(p, "gender")) 
 # delattr(p, "age")
 # print(hasattr(p, "age"))
+# class user:
+#     pass
+# u = user()
+# setattr(u,"username", "admin")
+# setattr(u, "email", "admin@gmail.com")
+# if hasattr(u,"email"):
+#     print(getattr(u,"email"))
+# delattr(u,"email")
+# print(hasattr(u,"email"))
+# print(getattr(u,"username"))
+# for key, value in u.__dict__.items():
+#     if value == "admin":
+#         print(key)
+
