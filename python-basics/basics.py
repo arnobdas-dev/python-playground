@@ -7,6 +7,7 @@ print("---------------------")
 x = 4
 y = 3
 z=[1,2,3]
+w =[ "a","b","c"]
 i=0
 # a = "Look"
 # a = str(x)
@@ -213,7 +214,6 @@ List methods
 # list.remove("apple")
 # list.pop(1)
 # list.index("litchi")
-
 # number = number + [2,3,4,4,4,4]
 # print(number.count(3))
 # print(list)
@@ -231,7 +231,6 @@ Tuple methods
 # a,b = tuple
 # # print(a)
 # # print(b)
-
 # print(tuple.count("mango"))
 # print(tuple.index("mango"))
 
@@ -260,23 +259,27 @@ Set methods
 
 """
 Dictionary methods
+------------------
+"""
+# my_dic ={
+#     "name": "Arnob",
+#     "age": 25
+# }
+# new_dic = my_dic.copy()
+# print(new_dic)
+# print(my_dic.get("name"))
+# print(my_dic.items())
+# print(my_dic.keys())
+# print(my_dic.values())
+# name = my_dic.pop("name")
+# age = my_dic.popitem()
+# my_dic.setdefault("age", 30)
+# print(name)
+# print(age)
+# my_dic.update([("age",25),("age",2444)])
+# print(my_dic)
+
+"""
+Dictionary methods
 -----------
 """
-my_dic ={
-    "name": "Arnob",
-    "age": 25
-
-}
-new_dic = my_dic.copy()
-print(new_dic)
-print(my_dic.get("name"))
-print(my_dic.items())
-print(my_dic.keys())
-print(my_dic.values())
-name = my_dic.pop("name")
-age = my_dic.popitem()
-my_dic.setdefault("age", 30)
-print(name)
-print(age)
-my_dic.update([("age",25),("age",2444)])
-print(my_dic)
