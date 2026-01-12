@@ -280,6 +280,29 @@ Dictionary methods
 # print(my_dic)
 
 """
-Dictionary methods
------------
+File I/O
+--------
 """
+# with open("home.txt", "a") as file:
+#     file.write("this is dfdsfsdfsdarnob.\n")
+# with open("home.txt", "a") as file:
+#     file.write("New line added\n")
+with open("home.txt","r") as file:
+    data = file.read(1)           
+    # print(data)
+    # print(file.readline(4))
+    # print(file.readline(4))
+    # print(file.readlines(4))
+    file.seek(0)
+    print(file.read())
+    print(file.tell())
+# with open("home.txt","w"):
+#     file.write("hiii")
+#     file.flush()
+import os
+if os.path.exists("home.txt"):
+    print("File available")
+    os.remove("home.txt")
+with open("new.txt", os.O_CREAT) as file:
+    os.write(file, b"Hhiiiiii")
+    

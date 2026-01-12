@@ -92,23 +92,23 @@ Calculator
 Student grades dictionar
 ------------------------
 """
-grades = {
-    "Alis": 23, 
-    "Alxe": 35, 
-    "Androw": 99, 
-    "Arnob": 45
-}
-total = sum(grades.values())
-num_of_students = len(grades)
-avg = total/num_of_students
-top_student = max(grades, key=grades.get)
-top_number = max(grades.values())
-passed_students = [name for name , grade in grades.items() if grade >=33]
-failed_students=[name for name, grade in grades.items() if grade <33]
-print(f"Total number : {total}")
-print(f"Total student: {num_of_students}")
-print(f"Avarage number: {avg} ")
-print(f"Top student name: {top_student}")
-print(f"Top student number: {top_number}")
-print(f"Passed student name: {passed_students}")
-print(f"Failed student name: {failed_students}")
+# grades = {
+#     "Alis": 23, 
+#     "Alxe": 35, 
+#     "Androw": 99, 
+#     "Arnob": 45
+# }
+# total = sum(grades.values())
+# num_of_students = len(grades)
+# avg = total/num_of_students
+# top_student = max(grades, key=grades.get)
+# top_number = max(grades.values())
+# passed_students = [name for name , grade in grades.items() if grade >=33]
+# failed_students=[name for name, grade in grades.items() if grade <33]
+# print(f"Total number : {total}")
+# print(f"Total student: {num_of_students}")
+# print(f"Avarage number: {avg} ")
+# print(f"Top student name: {top_student}")
+# print(f"Top student number: {top_number}")
+# print(f"Passed student name: {passed_students}")
+# print(f"Failed student name: {failed_students}")
