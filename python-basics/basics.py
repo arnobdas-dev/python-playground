@@ -287,22 +287,73 @@ File I/O
 #     file.write("this is dfdsfsdfsdarnob.\n")
 # with open("home.txt", "a") as file:
 #     file.write("New line added\n")
-with open("home.txt", "r") as file:
-    data = file.read(1)          
+# with open("home.txt", "r") as file:
+#     data = file.read(1)          
     # print(data)
     # print(file.readline(4))
     # print(file.readline(4))
     # print(file.readlines(4))
-    file.seek(0)
-    print(file.read())
-    print(file.tell())
+    # file.seek(0)
+    # print(file.read())
+    # print(file.tell())
 # with open("home.txt","w"):
 #     file.write("hiii")
 #     file.flush()
-import os
-if os.path.exists("home.txt"):
-    print("File available")
-    os.remove("home.txt")
-with open("new.txt", "w") as file:
-    os.write(file, b"Hhiiiiii")
-    
+# import os
+# if os.path.exists("home.txt"):
+#     print("File available")
+#     os.remove("home.txt")
+# with open("new.txt", "w") as file:
+#     os.write(file, b"Hhiiiiii")
+
+"""
+Date and time
+-------------
+"""
+import datetime
+import time
+# time = datetime.datetime.now()
+# time = datetime.date.today()
+# time = datetime.datetime(2025,12,2,4,5,5)
+# time = datetime.timedelta()
+# print(time)
+# print(time.ctime())
+# print(time.sleep(2))
+# # print(time.year)
+# print(time.month)
+# print(time.day)
+# print(time.hour)
+# print(time.minute)
+# print(time.second)
+# print(time.microsecond)
+import calendar
+# print(calendar.month(2025,1))
+# print(calendar.isleap(2024))
+# from datetime import datetime
+# while True:
+#     now = datetime.now().strftime("%H:%M")
+#     if now == "02:13":
+#         print("Wake up!")
+#         break
+#     time.sleep(30)
+
+"""
+Exceptions
+----------
+"""
+# try:
+#     x = 12/0
+# except ZeroDivisionError:
+#     print("You can not devided by zero")
+# raise ValueError("0 can not useable")
+# raise TypeError("This is type error")
+# raise IndexError("Index out of range")
+# raise KeyError("Key not found")
+# raise NameError("Variable not defined")
+# raise AttributeError("Object has no attribute")
+# raise FileNotFoundError("File not found")
+# raise IOError("I/O error")
+# raise OSError("OS error")
+# raise ImportError("Module not found")
+# raise KeyboardInterrupt("User stopped program")
+# raise MemoryError("Out of memory")
