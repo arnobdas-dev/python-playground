@@ -287,8 +287,8 @@ File I/O
 #     file.write("this is dfdsfsdfsdarnob.\n")
 # with open("home.txt", "a") as file:
 #     file.write("New line added\n")
-with open("home.txt","r") as file:
-    data = file.read(1)           
+with open("home.txt", "r") as file:
+    data = file.read(1)          
     # print(data)
     # print(file.readline(4))
     # print(file.readline(4))
@@ -303,6 +303,6 @@ import os
 if os.path.exists("home.txt"):
     print("File available")
     os.remove("home.txt")
-with open("new.txt", os.O_CREAT) as file:
+with open("new.txt", "w") as file:
     os.write(file, b"Hhiiiiii")
     
