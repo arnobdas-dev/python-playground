@@ -357,3 +357,50 @@ Exceptions
 # raise ImportError("Module not found")
 # raise KeyboardInterrupt("User stopped program")
 # raise MemoryError("Out of memory")
+
+"""
+CSV
+---
+"""
+import csv
+# with open("students.csv","r") as file:
+#     # reader = csv.reader(file)
+#     reader = csv.DictReader(file)
+#     # next(reader)
+#     for row in reader:
+#         print(row)
+# with open("student's.csv","w+", newline="") as file:
+#     writer = csv.writer(file)
+#     writer.writerow(["name", "age", "selary"])                EEEEEEEEEEEE
+#     writer.writerow(["Asrnob",25,3450])
+#     new = csv.DictReader(writer)
+#     for tk in writer:
+#         print(tk)
+
+# data = [
+#     {"name": "Arnob", "age": 20, "score": 85},
+#     {"name": "Rafi", "age": 21, "score": 90}
+# ]
+# with open("students.csv", "w", newline="") as file:  EEEEEEEEEEEEEEEEEEE
+#     name = ["name", "age", "score"]
+#     writer = csv.DictWriter(file, fieldnames=name)
+#     writer.writeheader()
+#     writer.writerow(data)
+import json
+data = {
+    "name": "Arnob",
+    "age": 20,
+    "skills": ["Python", "ML"]
+}
+# with open("data.json", "w") as file:
+#     json.dump(data, file)
+# with open("data.json","r") as file:
+#     data = json.load(file)
+# print(data)
+# print(data["name"])
+# with open("data.json", "w") as file:
+#     json.dump(data,file, indent =2)
+json_str = json.dumps(data)
+print(type(json_str))
+obj = json.loads(json_str)
+print(type(obj))
