@@ -404,3 +404,5 @@ json_str = json.dumps(data)
 print(type(json_str))
 obj = json.loads(json_str)
 print(type(obj))
+
+print( " Now everything is perfect ... ")
