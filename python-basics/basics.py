@@ -400,9 +400,27 @@ data = {
 # print(data["name"])
 # with open("data.json", "w") as file:
 #     json.dump(data,file, indent =2)
-json_str = json.dumps(data)
-print(type(json_str))
-obj = json.loads(json_str)
-print(type(obj))
+# json_str = json.dumps(data)
+# print(type(json_str))
+# obj = json.loads(json_str)
+# print(type(obj))
 
-print( " Now everything is perfect ... ")
+# print( " Now everything is perfect ... ")
+# class dog:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def __str__(self):
+#         return f"{self.name} is {self.age} years old"
+# d = dog("Tom", 3)
+# print(d.__dict__)
+
+# class Employee:
+#     company = "Basundhara"
+#     @classmethod
+#     def changeCompany(cls, newCompany):
+#         cls.company = newCompany
+# Employee.changeCompany("Jamuna")
+# print(Employee.company)
+# Employee.__name__ = "worker"
+# print(Employee.__name__)
